@@ -37,10 +37,10 @@ public class InventorySlot : MonoBehaviour
         var itemDB = DBContainer.Instance.ItemDB;
         var itemData = itemDB.GetItemByID(item.ID);
 
-        Icon.gameObject.SetActive(false);
+        Icon.gameObject.SetActive(true);
         Icon.sprite = itemData.Icon;
 
-        StackText.gameObject.SetActive(false);
+        StackText.gameObject.SetActive(true);
         StackText.text = itemData.MaxStackSize.ToString();
 
         if (item is Animal animal) 

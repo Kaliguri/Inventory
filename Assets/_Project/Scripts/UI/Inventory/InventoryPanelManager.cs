@@ -8,7 +8,7 @@ public class InventoryPanelManager : MonoBehaviour
     [SerializeField] private GameObject itemSlotPrefab;
 
 
-    private List<GameObject> slotObjectList;
+    private List<GameObject> slotObjectList = new List<GameObject>();
     public void CreateInventorySlots(int slotNumber)
     {
         for (int i = 0; i < slotNumber; i++)
